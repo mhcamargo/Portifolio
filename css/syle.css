@@ -56,6 +56,21 @@
   justify-content: center;
   align-items: center;
   background-color: darkorchid;
+  color: #ffffff;
+  font-family: var(--font-action);
+  opacity: 0;
+}
+.hamburger span::before {
+  content: "";
+  position: absolute;
+  border-right: 0.5rem solid darkorchid;
+  border-top: 0.5rem solid transparent;
+  border-left: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  left: -1rem;
+}
+.show-menu .hamburger:hover span {
+  opacity: 1;
 }
 header {
   width: 100%;
