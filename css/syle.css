@@ -5,7 +5,29 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  z-index: 111;
+  right: 2rem;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #ffffff;
+  box-shadow: 0.1rem 0.1rem 1px #000000;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -74,13 +96,7 @@ header {
   animation: moveBanner 1s 0.9s forwards;
   opacity: 0;
 }
-.banner button:hover {
-  background: #7f00ff;
-  background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
-  background: linear-gradient(to right, #e100ff, #7f00ff);
-  opacity: 0.8;
-  transition: 1s;
-}
+
 @keyframes moveBanner {
   0% {
     transform: translateY(10rem) rotateY(-30deg);
@@ -89,4 +105,21 @@ header {
     transform: translateY(0) rotateY(0);
     opacity: 1;
   }
+}
+.sidebar {
+  width: 20rem;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.menu {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-item {
+  text-align: center;
 }
