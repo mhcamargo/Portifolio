@@ -276,3 +276,73 @@ header {
   object-fit: cover;
   width: 100%;
 }
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.card-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.card:hover .card-img-wrapper img {
+  opacity: 0.7;
+}
+.card-info {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 0 0 2rem 0.3 rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
+}
+.card-info h2 {
+  font-family: var(--font-secund);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+  margin-bottom: 1rem;
+}
+.card-info h3 {
+  font-family: var(--font-secund);
+  font-weight: 500;
+  color: #80ffff;
+  margin-bottom: 1rem;
+}
+.card-info p {
+  font-family: var(--font-secund);
+  color: #eee;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.card-info button {
+  width: 8rem;
+  height: 2.5rem;
+  font-family: var(--font-action);
+  background: #da22ff;
+  background: -webkit-linear-gradient(to right, #9733ee, #da22ff);
+  background: linear-gradient(to right, #9733ee, #da22ff);
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 2rem 0.3 rgba(0, 0, 0, 0.7);
+}
+.card:hover .card-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
