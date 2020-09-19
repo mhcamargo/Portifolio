@@ -306,9 +306,9 @@ header {
   visibility: hidden;
   position: absolute;
   bottom: 0;
-  padding: 2rem;
+  padding: 1rem;
   text-shadow: 0 0 2rem 0.3 rgba(0, 0, 0, 0.7);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .card-info h2 {
   font-family: var(--font-secund);
