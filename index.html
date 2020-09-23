@@ -228,17 +228,17 @@
           <div class="contato-left"></div>
           <div class="contato-rigth">
             <h1>Contato</h1>
-            <form>
+            <form method="GET" action="http://localhost/port/contato.php">
               <div class="input-group">
-                <input type="text" class="field" />
+                <input type="text" class="field" name="nome"/>
                 <label for="nome" class="field-label">Nome</label>
               </div>
               <div class="input-group">
-                <input type="text" class="field" />
+                <input type="text" class="field" name="email"/>
                 <label for="email" class="field-label">E-mail</label>
               </div>
               <div class="input-group">
-                <textarea class="field" id="mensagem"></textarea>
+                <textarea class="field" id="mensagem" name="mensag"></textarea>
                 <label for="mensagem" class="field-label">Mensagem</label>
               </div>
               <button type="submit" class="btn btn-submit">Enviar</button>
