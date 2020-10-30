@@ -1,3 +1,4 @@
+/** Menu Hamburguer */
 document
   .querySelector(".hamburger")
   .addEventListener("click", () =>
